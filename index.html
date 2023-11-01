@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        position: absolute;
+        left: 600px;
+        top: 50px;
+        color:aqua;
+    }
+    body{
+        background-image: url("d:\full stack\images\images.jpeg");
+    }
+    nav{
+        
+        position: sticky;
+        background-color: black;
+        padding: 100px;
+
+    }
+    .subnav{
+        position: absolute;
+        left: 800px;
+        top: 100px;
+        
+    }
+.nav-item{
+    display: inline;
+    padding-left: 20px;
+}
+a{
+    font-size: 25px;
+    text-decoration: none;
+}
+.drop-item{
+position: absolute;
+z-index: 10;
+left: 200px;
+display: none;
+}
+.dropdown:hover .drop-item{
+    display: block;
+}
+
+</style>
+<body>
+    <h1>Web Page</h1>
+    
+    <nav>
+        <img src="d:\full stack\images\weblogo.png" height="80" width="80">
+
+        <ul class="subnav">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="about.html">About</a></li>
+            <li class="nav-item dropdown"><a href="courses.html">Courses</a></li>
+            <ul class="drop-item">
+                <li><a href="">E.T</a></li>
+                <li><a href="">A.E.T</a></li>
+                <li><a href="">C.S</a></li>
+                <li><a href="">M.L.T</a></li>
+
+
+            </ul>
+            <li class="nav-item"><a href="gallary.html">Gallary</a></li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+</body>
+</html>
